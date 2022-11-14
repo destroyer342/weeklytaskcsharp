@@ -13,7 +13,10 @@ namespace WeeklyAssignment.Controllers
         public IEnumerable<string> Get()
         {
             
-            return new string[] { "Employee 1", "Employee 2" };
+            return new string[] 
+            { 
+                "Employee 1", "Employee 2" 
+            };
         }
 
         // GET api/<EmployeeController>/5
