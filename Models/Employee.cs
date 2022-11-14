@@ -1,8 +1,12 @@
-﻿namespace WeeklyAssignment.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System;
+namespace WeeklyAssignment.Models
 {
     public class Employee
     {
-        public Guid Id { get; set; }
-        public string name { get; set; }
+        [Key]
+        public int Id { get; set; }
+        public string? name { get; set; }
+        public int age { get; set; }
     }
 }
